@@ -1,6 +1,6 @@
 {
   "name": "@kross77/react-native-layout",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react,react native and jsx npm package generator with typescript",
   "scripts": {
     "build": "rm -rf ./dist/** && tsc -b",
