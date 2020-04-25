@@ -1,13 +1,12 @@
 import * as React from "react";
 import Block from "./Block";
 
-export interface Layout extends Block {
-  children: React.ReactChildren;
+interface Layout extends Partial<Block> {
+  children: JSX.Element | JSX.Element[];
   wrapper?: React.ComponentType;
   wrappers?: Block[];
   gap?: number;
 }
-
 
 const Layout = ({
                   children,
