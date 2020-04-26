@@ -1,10 +1,11 @@
 {
   "name": "@kross77/react-native-layout",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "react,react native and jsx npm package generator with typescript",
   "scripts": {
-    "build": "rm -rf ./dist/** && tsc -b",
+    "build": "rm -rf ./dist/** && tsdx build",
     "b": "yarn build",
+    "b2": "rm -rf ./dist/** && tsc -b",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release",
     "watch": "tsc -b --watch",
@@ -21,8 +22,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/src/index.d.ts",
-  "main": "dist/src/index.js",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
   "keywords": [
     "react",
     "react-native",
@@ -46,25 +47,20 @@
     "@kross77/react-native-layout": "^1.0.1",
     "babel-preset-react-native": "1.9.0",
     "react": "16.9.0",
-    "react-native": "0.62.1",
     "styled-components": "3.2.3"
   },
   "devDependencies": {
-    "@babel/cli": "7.2.3",
-    "@babel/core": "7.3.4",
-    "@babel/plugin-proposal-class-properties": "7.3.4",
-    "@babel/plugin-proposal-object-rest-spread": "7.3.4",
-    "@babel/plugin-transform-typescript": "7.3.2",
-    "@babel/preset-env": "7.3.4",
-    "@babel/preset-typescript": "7.3.3",
     "@types/jest": "24.0.9",
     "@types/react": "16.8.5",
     "enzyme": "3.9.0",
     "enzyme-adapter-react-16": "1.10.0",
     "jest": "24.1.0",
+    "metro-react-native-babel-preset": "^0.56.0",
+    "react-native": "0.61.5",
     "react-test-renderer": "16.8.3",
     "semantic-release": "15.13.3",
     "ts-jest": "24.0.0",
+    "tsdx": "^0.13.2",
     "tslint": "5.13.0",
     "tslint-config-prettier": "1.18.0",
     "tslint-react": "3.6.0",
