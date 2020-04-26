@@ -107,3 +107,12 @@ storiesOf('Layout', module)
             </Layout>
         </Layout>
     ))
+    .add('f1 red', () => (
+        <Layout f1 red />
+    ))
+    .add('f1 red, f2 blue', () => (
+        <Layout f1>
+            <Layout f1 red/>
+            <Layout f2 blue/>
+        </Layout>
+    ))

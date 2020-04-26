@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "./src",
+    "rootDir": "./src",
     "composite": true,
     "esModuleInterop": true,
     "noFallthroughCasesInSwitch": true,
@@ -18,7 +19,7 @@
     "jsx": "react",
     "target": "ES6",
     "moduleResolution": "node",
-    "module": "commonjs",
+    "module": "ES6",
     "lib": ["dom", "esnext"],
     "skipLibCheck": true,
     "allowJs": true,

@@ -74,60 +74,64 @@ interface Block {
 	oYellow: boolean
 }
 
+//@ts-ignore
+const param = (name: string, paramName: string | undefined = undefined) => ({[name]: value}:any) => {
+	if(value !== null && value !== undefined){
+		return `${paramName || name}: ${multiplier(value)};`
+	}
+}
+
 const widthProps = separateLiteralToProps`
-	${({w}: Block) => w === true ? 'width: 100%' : w && `width: ${multiplier(w)};`}
-	${({h}: Block) => h === true ? 'height: 100%' : `height: ${multiplier(h as string | number)};`}
-	${({minHeight}: Block) => minHeight && `min-height: ${multiplier(minHeight)};`}
-	${({minWidth}: Block) => minWidth && `min-width: ${multiplier(minWidth)};`}
+	${({w}: Block) => w === true ? 'width: 100%;' : w ? `width: ${multiplier(w)} ;` : undefined}
+	${({h}: Block) => h === true ? 'height: 100%;' : h ? `height: ${multiplier(h as string | number)};` : undefined}
+	${param('minHeight', 'min-height')}
+	${param('minWidth', 'min-width')}
 `;
 
 const flexProps = separateLiteralToProps`
-	${({flexDirection}: Block) => flexDirection && `flex-direction: ${flexDirection};`}
-	${({flex}: Block) => flex && `flex: ${flex};`}
-	${({flexWrap}: Block) => flexWrap && `flex-wrap: ${flexWrap};`}
-	${({justify}: Block) => justify && `justify-content: ${justify};`}
-	${({align}: Block) => align && `align-items: ${align};`}
-	${({color}: Block) => color && `background-color: ${color};`}
+	${param('flexDirection', 'flex-direction')}
+	${param('flex')}
+	${param('flexWrap', 'flex-wrap')}
+	${param('justify', 'justify-content')}
+	${param('align', 'align-items')}
+	${param('color', 'background-color')}
 `;
 
 const paddingProps = separateLiteralToProps`
-	${({pv}: Block) => pv && `padding-vertical: ${multiplier(pv)};`}
-	${({ph}: Block) => ph && `padding-horizontal: ${multiplier(ph)};`}
-	${({pt}: Block) => pt && `padding-top: ${multiplier(pt)};`}
-	${({pr}: Block) => pr && `padding-right: ${multiplier(pr)};`}
-	${({pb}: Block) => pb && `padding-bottom: ${multiplier(pb)};`}
-	${({pl}: Block) => pl && `padding-left: ${multiplier(pl)};`}
-	${({padding}: Block) => padding && `padding: ${multiplier(padding)};`}
-	${({p}: Block) => p && `padding: ${multiplier(p)};`}
+	${param('pv', 'padding-vertical')}
+	${param('ph', 'padding-horizontal')}
+	${param('pt', 'padding-top')}
+	${param('pr', 'padding-right')}
+	${param('pl', 'padding-left')}
+	${param('p', 'padding')}
 `;
 /* Background: */
 
 const marginProps = separateLiteralToProps`
-	${({mv}: Block) => mv && `margin-vertical: ${multiplier(mv)};`}
-	${({mh}: Block) => mh && `margin-horizontal: ${multiplier(mh)};`}
-	${({mt}: Block) => mt && `margin-top: ${multiplier(mt)};`}
-	${({mr}: Block) => mr && `margin-right: ${multiplier(mr)};`}
-	${({mb}: Block) => mb && `margin-bottom: ${multiplier(mb)};`}
-	${({ml}: Block) => ml && `margin-left: ${multiplier(ml)};`}
-	${({margin}: Block) => margin && `margin: ${multiplier(margin)};`}
+	${param('mv', 'margin-vertical')}
+	${param('mh', 'margin-horizontal')}
+	${param('mt', 'margin-top')}
+	${param('mr', 'margin-right')}
+	${param('mb', 'margin-bottom')}
+	${param('mb', 'margin-bottom')}
+	${param('m', 'margin')}
 `;
 
 const borderProps = separateLiteralToProps`
-	${({r}: Block) => r && `border-radius: ${r};`}
+	${param('r', 'border-radius')}
 `;
 
 const transformProps = separateLiteralToProps`
 	${({scale}: Block) => scale && `transform: scale(${multiplier(scale)});`}
 	${({rotate}: Block) => rotate && `transform: rotate(${multiplier(rotate)}deg);`}
 `;
-const isExist = (value: any) => value !== undefined && value !== null;
 
 const positionProps = separateLiteralToProps`
-	${({zIndex}: Block) => zIndex && `z-index: ${multiplier(zIndex)};`}
-	${({top}: Block) => isExist(top) && `top: ${multiplier(top)};`}
-	${({left}: Block) => isExist(left) && `left: ${multiplier(left)};`}
-	${({right}: Block) => isExist(right) && `right: ${multiplier(right)};`}
-	${({bottom}: Block) => isExist(bottom) && `bottom: ${multiplier(bottom)};`}
+	${param('zIndex', 'z-index')}
+	${param('top')}
+	${param('left')}
+	${param('right')}
+	${param('bottom')}
 `;
 
 const superProps = separateLiteralToProps`
