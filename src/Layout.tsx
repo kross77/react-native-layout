@@ -3,7 +3,7 @@ import { View } from "react-native";
 import Block from "./Block";
 
 interface Layout extends Partial<Block>, View {
-  children: JSX.Element | JSX.Element[];
+  children?: JSX.Element | JSX.Element[];
   wrapper?: React.ComponentType;
   wrappers?: Block[];
   gap?: number;
