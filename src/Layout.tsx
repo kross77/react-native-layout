@@ -1,8 +1,8 @@
 import * as React from "react";
-import { View } from "react-native";
+import { ViewProps } from "react-native";
 import Block from "./Block";
 
-interface Layout extends Partial<Block>, View {
+interface Layout extends ViewProps, Partial<Block> {
   children?: JSX.Element | JSX.Element[];
   wrapper?: React.ComponentType;
   wrappers?: Block[];
