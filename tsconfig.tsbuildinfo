@@ -193,7 +193,7 @@
         "version": "7b404f579e1741633f73227093bb30202cd88decce29520cc5de8420e2d408c9",
         "signature": "b66e3d982927f9faf6d3f09faaea60e06993c45a4e789f9d8f9ca9406216e295"
       },
-      "./src/block/index.tsx": {
+      "./src/block/index.ts": {
         "version": "96014e63b52a8f6757be0cf4b9a2d81eb57f060b3336ecf211dfc2cf1828d407",
         "signature": "fe1d52f9b3ea2d77f898700e028be6665084f5ebe010a50ebb52be99881836f8"
       },
@@ -845,7 +845,7 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "./src/block/index.tsx": [
+      "./src/block/index.ts": [
         "./node_modules/styled-components/native/index.d.ts",
         "./src/block/withdevice.js",
         "./src/block/withmultisize.js",
@@ -858,7 +858,7 @@
       ],
       "./src/layout.tsx": [
         "./node_modules/@types/react/index.d.ts",
-        "./src/block/index.tsx",
+        "./src/block/index.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/util.d.ts",
@@ -1707,13 +1707,13 @@
         "./node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "./src/layout.tsx": [
-        "./src/block/index.tsx",
+        "./src/block/index.ts",
         "./node_modules/@types/react/index.d.ts"
       ],
       "./src/index.ts": [
         "./src/layout.tsx"
       ],
-      "./src/block/index.tsx": [
+      "./src/block/index.ts": [
         "./node_modules/@types/react/index.d.ts"
       ],
       "./node_modules/styled-components/native/index.d.ts": [
@@ -2293,7 +2293,7 @@
       "./src/block/withdevice.js",
       "./src/block/withmultisize.js",
       "./src/utils/literalutils.js",
-      "./src/block/index.tsx",
+      "./src/block/index.ts",
       "./src/layout.tsx",
       "./src/block/withdevice.test.js",
       "./src/block/withmultisize.android.js",

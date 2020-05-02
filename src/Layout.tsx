@@ -1,7 +1,8 @@
 import * as React from "react";
+import { View } from "react-native";
 import Block from "./Block";
 
-interface Layout extends Partial<Block> {
+interface Layout extends Partial<Block>, View {
   children: JSX.Element | JSX.Element[];
   wrapper?: React.ComponentType;
   wrappers?: Block[];
@@ -9,11 +10,11 @@ interface Layout extends Partial<Block> {
 }
 
 const Layout = ({
-                  children,
-                  wrapper: Wrapper = React.Fragment,
-                  wrappers = [],
-                  gap = 0,
-                  ...props
+  children,
+  wrapper: Wrapper = React.Fragment,
+  wrappers = [],
+  gap = 0,
+  ...props
 }: Layout) => (
   <Block {...props}>
     {Array.isArray(children)
