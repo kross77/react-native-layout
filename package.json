@@ -59,7 +59,7 @@
     "metro-react-native-babel-preset": "^0.56.0",
     "react-native": "0.61.5",
     "react-test-renderer": "16.8.3",
-    "semantic-release": "15.13.3",
+    "semantic-release": "17.2.3",
     "ts-jest": "24.0.0",
     "tsdx": "^0.13.2",
     "tslint": "5.13.0",
