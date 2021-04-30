@@ -1623,8 +1623,22 @@
     core-js "^3.4.1"
 
 "@kross77/layout@link:..":
-  version "0.0.0"
-  uid ""
+  version "1.0.10"
+  dependencies:
+    "@kross77/react-native-layout" "^1.0.1"
+    babel-preset-react-native "1.9.0"
+    react "16.9.0"
+    styled-components "3.2.3"
+
+"@kross77/react-native-layout@^1.0.1":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@kross77/react-native-layout/-/react-native-layout-1.0.10.tgz#79213f3f8b865693c82cd49a0c2411148500887c"
+  integrity sha512-+lluP+XoahEx38GYqz4tosQi9XW5inXvyxNBzvmoY8rUBb/yRdnAwq/VMM0Jn56ZXE6MYNIoN0k2U0oqUhP/mg==
+  dependencies:
+    "@kross77/react-native-layout" "^1.0.1"
+    babel-preset-react-native "1.9.0"
+    react "16.9.0"
+    styled-components "3.2.3"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -9681,9 +9695,9 @@ sprintf-js@~1.0.2:
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
 ssri@^6.0.1:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.1.tgz#2a3c41b28dd45b62b63676ecb74001265ae9edd8"
-  integrity sha512-3Wge10hNcT1Kur4PDFwEieXSCMCJs/7WvSACcrMYrNp+b8kDL1/0wJch5Ni2WrtwEa2IO8OsVfeKIciKCDx/QA==
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/ssri/-/ssri-6.0.2.tgz#157939134f20464e7301ddba3e90ffa8f7728ac5"
+  integrity sha512-cepbSq/neFK7xB6A50KHN0xHDotYzq58wWCa5LeWqnPrHG8GzfEjO/4O8kpmcGW+oaxkvhEJCWgbgNk4/ZV93Q==
   dependencies:
     figgy-pudding "^3.5.1"
 
