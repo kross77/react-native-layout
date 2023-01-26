@@ -1623,8 +1623,22 @@
     core-js "^3.4.1"
 
 "@kross77/layout@link:..":
-  version "0.0.0"
-  uid ""
+  version "1.0.10"
+  dependencies:
+    "@kross77/react-native-layout" "^1.0.1"
+    babel-preset-react-native "1.9.0"
+    react "16.9.0"
+    styled-components "3.2.3"
+
+"@kross77/react-native-layout@^1.0.1":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@kross77/react-native-layout/-/react-native-layout-1.0.10.tgz#79213f3f8b865693c82cd49a0c2411148500887c"
+  integrity sha512-+lluP+XoahEx38GYqz4tosQi9XW5inXvyxNBzvmoY8rUBb/yRdnAwq/VMM0Jn56ZXE6MYNIoN0k2U0oqUhP/mg==
+  dependencies:
+    "@kross77/react-native-layout" "^1.0.1"
+    babel-preset-react-native "1.9.0"
+    react "16.9.0"
+    styled-components "3.2.3"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -10250,9 +10264,9 @@ typescript@3.8.3:
   integrity sha512-MYlEfn5VrLNsgudQTVJeNaQFUAI7DkhnOjdpAp4T+ku1TfQClewlbSuTVHiA+8skNBgaf02TL/kLOvig4y3G8w==
 
 ua-parser-js@^0.7.18:
-  version "0.7.21"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
-  integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
+  version "0.7.33"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.33.tgz#1d04acb4ccef9293df6f70f2c3d22f3030d8b532"
+  integrity sha512-s8ax/CeZdK9R/56Sui0WM6y9OFREJarMRHqLB2EwkovemBxNQ+Bqu8GAsUnVcXKgphb++ghr/B2BZx4mahujPw==
 
 uglify-es@^3.1.9:
   version "3.3.9"
